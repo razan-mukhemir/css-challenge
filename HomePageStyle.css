@@ -1,0 +1,759 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+:root{
+    --primery-yellow:#fdc134;
+    --primery-gray:#444444;
+    --primery-lightGrey:#999999;
+    --primery-navy:#213b52;
+    --primery-lightBlue:#d3dce4;
+    --mainFont: "Poppins";
+}
+
+body{
+    font-family: var(--mainFont);
+    margin: 0;
+    padding: 0;
+}
+/****************************************/
+header{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primery-navy);
+    overflow: hidden;
+    
+}
+.logo h1 {
+    font-size: 1.6rem;
+    color: white;
+    margin: 0;
+}
+
+.logo h1::after{
+    content: '.';
+    color: var(--primery-yellow);
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+nav .menu-icon {
+    display: none;
+    color: var(--primery-lightBlue);
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    
+}
+
+nav ul li a{
+    color: var(--primery-lightBlue);
+}
+
+nav ul li a:hover{
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li.get-started-btn{
+    border: 1px solid var(--primery-yellow);
+   padding: 0.4em 1.2em;
+    border-radius: 4em;
+    
+}
+
+.heroContainer{
+    display: flex;
+   
+    
+}
+
+.hero-text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+    width: 50%;
+    padding-left: 8rem;
+   
+    
+   
+}
+
+.hero-text h1 , .hero-text p{
+    color: var(--primery-lightBlue);
+    
+}
+
+.hero-text h1{
+    font-size: clamp(1em,10vw,3em);
+    margin-bottom: 0em;
+    
+}
+
+.hero-text p{
+    font-size: 1.5em;
+    color: white;
+    margin-top: 0;
+}
+
+.heroContainer button{
+    background-color: var(--primery-yellow);
+    padding: 1em 2.5em;
+    border-radius: 4em;
+    border: none;
+    color: var(--primery-gray);
+    margin-top: 3em;
+
+
+}
+
+.hero-image{
+   
+    width: 50%;
+}
+
+.hero-image img{
+    width: 75%;
+    height: 95vh;
+}
+
+/*********************clients container*********************/
+
+.clients-container{
+    padding: 4% 0 ;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.clients-container img{
+    width: 90px;
+    height: 40px;
+   
+}
+
+/********************about us container ***************/
+
+.aboutus-container{
+    display: flex;
+    background-image: linear-gradient(#f7f9fb,white,white);
+    padding: 4% 0;
+    margin-right: 4em;
+    color: var(--primery-navy);
+    width: 100%;
+}
+
+.aboutus-image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutus-image img{
+    width: 60%;
+    height: 100%;
+   
+}
+
+.aboutus-description{
+    width: 50%;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+}
+
+.aboutus-description >h2{
+    
+    font-size: 2.4em;
+}
+
+.aboutus-description >p{
+    color: var(--primery-gray);
+    margin-top: 0.5em;
+}
+
+.aboutus-points{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.aboutus-points >div{
+    display: flex;
+    width: 50%;
+    margin-bottom: 2em;
+
+}
+
+.aboutus-points >div h3{
+    margin-bottom: 0.5em;
+}
+
+.aboutus-points >div p{
+    color: var(--primery-lightGrey);
+}
+
+.aboutus-points >div i{
+    font-size: 2em;
+    color: var(--primery-yellow);
+    margin-right: 0.5em;
+}
+
+/*******************services container*********************/
+
+.services-container , .features-container,.pricing-container , .contactus-container{
+    color: var(--primery-navy);
+    background-image: linear-gradient(#f7f9fb,white,white);
+    
+    padding: 4% 0;
+}
+
+.services-container h2 ,.features-container h2 ,.pricing-container h2 , .contactus-container h2{
+    font-size: 2em;
+    margin: auto;
+    margin-bottom: 1em;
+    border-bottom:  1px var(--primery-lightGrey) solid;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.services-container >p , .features-container >p , .pricing-container >p , .contactus-container >p{
+    color: var(--primery-gray);
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 2em;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services >div{
+    width: 35%;
+    height: 300px;
+    margin-bottom: 12em;
+    margin-right: 2em;
+    
+
+}
+
+.services > div:nth-child(1){
+    background-image: url('./images/services-1.jpg');
+}
+.services > div:nth-child(2){
+    background-image: url('./images/services-2.jpg');
+}
+.services > div:nth-child(3){
+    background-image: url('./images/services-3.jpg');
+}
+.services > div:nth-child(4){
+    background-image: url('./images/services-4.jpg');
+}
+
+.service-desc{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 80%;
+    padding: 5%;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.service-desc>h3{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.service-desc>p{
+    color: var(--primery-lightGrey);
+    margin-bottom: 1em;
+}
+
+.services a{
+    color: var(--primery-lightGrey);
+    font-size: 0.7em;
+    position: relative;
+    left: 0;
+}
+.services a::before{
+    content: '=>';
+}
+
+/*********************features container********************/
+.features{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.feature-img{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-img img{
+    width: 80%;
+    height: 80%;
+    
+}
+
+.features:nth-child(even){
+   flex-direction: row-reverse;
+}
+
+.feature-desc{
+    width: 60%;
+    margin-top: 4em;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-desc h3{
+    font-size: 1.8em;
+    margin-bottom: 0.4em;
+}
+
+.feature-desc p{
+    color: var(--primery-gray);
+    margin-bottom: 1.4em;
+}
+
+.feature-desc i{
+    color: var(--primery-yellow);
+}
+
+/************priceing container****************************/
+.pricing-cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 1%;
+    
+    
+}
+
+.card{
+    max-width: 350px;
+    background-color: white;
+    text-align: center;
+    color: var(--primery-gray);
+    box-shadow: 5px 5px 10px var(--primery-lightGrey);
+    padding: 5% 0;
+    margin-top: 4em;
+    flex-grow: 1;
+    flex-basis: 0;
+    
+}
+
+.card:nth-child(2){
+    margin-top: 2rem;
+  margin-bottom: -2rem;
+z-index: 5;
+    border: 1px solid var(--primery-yellow);
+}
+
+.card h3{
+    margin-bottom: 1em;
+    font-size: 1.6em;
+}
+
+.card p{
+    margin-bottom: 0.5em;
+    color: var(--primery-lightGrey);
+}
+
+.card a{
+    color: white;
+    background-color: var(--primery-navy);
+    padding: 0.5em 1em;
+    border-radius: 4em;
+    margin-bottom: 4em;
+    
+}
+
+.card:nth-child(2) a{
+    background-color: var(--primery-yellow);
+}
+
+.pricing-des{
+    margin-bottom: 2.5em;
+}
+
+.pricing-des >p{
+    
+    margin-bottom: 0.4em;
+}
+
+.pricing-des i{
+    color: var(--primery-yellow)
+}
+
+.price{
+    font-size: 2.1em;
+    color: var(--primery-yellow) !important;
+    font-weight: bolder;
+}
+
+/******************contact us container****************************/
+.contactus-container{
+    margin-top: 4em;
+}
+
+.contactus-row{
+    display: flex;
+}
+
+.our-info{
+    width: 50%;
+    text-align: center;
+    color: var(--primery-gray);
+   
+   
+    
+}
+
+.emailandcallus-containet{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.our-info i{
+    color: var(--primery-yellow);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid var(--primery-lightGrey);
+    border-radius: 10em;
+    padding: 0.2em;
+}
+
+.location,.email,.callus ,.sendmsg-box{
+    background-color: white;
+    padding: 5% 0;
+    box-shadow: 5px 5px 15px var(--primery-lightGrey);
+    
+}
+
+.location{
+    width: 70%;
+    margin-left: auto;
+    margin-bottom: 2em;
+    
+}
+
+.email,.callus{
+    width: 33%;
+    margin-left: 4%;
+   
+}
+
+.location-txt , .email-txt , .callus-txt{
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+
+.sendmsg-box{
+    width: 40%;
+    margin-left: 2em;
+    padding: 2% 5%;
+}
+
+.sendmsg-box input{
+    border: 1px solid var(--primery-lightGrey);
+    margin-bottom: 2em;
+    
+}
+
+#nameInput ,#emailInput{
+ width: 40%;
+ padding: 2% 5%;
+ margin-right: 5%;
+ 
+}
+
+#subjectInput{
+    width: 88%;
+    padding: 2% 5%;
+}
+
+#massegeInput{
+    width: 88%;
+    padding: 2% 5%;
+    height: 150px;
+}
+
+#sendmsg-btn{
+    background-color: var(--primery-yellow);
+    color: white;
+    border: none;
+    padding: 1em 1.5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2em;
+}
+
+/******************footer section********************/
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: var(--primery-navy);
+    padding-top: 6em;
+    padding-bottom: 4em;
+    color: var(--primery-lightGrey);
+}
+
+.footer-txt{
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.footer-email-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 45%;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 4em;
+    padding-left: 0.5em;
+}
+
+.footer-email-box input{
+    width: 80%;
+    height: 100%;
+    border: none;
+
+}
+
+.footer-email-box button{
+    background-color: var(--primery-yellow);
+    border: none;
+    color: white;
+    border-radius: 4em;
+    padding: 1em 1.5em;
+}
+
+.soialmedia-box{
+    margin-top: 2em;
+}
+
+
+.soialmedia-box a i{
+    color: white;
+    font-size: 1em;
+    border-radius: 20em;
+    background-color: var(--primery-lightGrey);
+    padding: 0.55em 0.6em;
+    margin-left: 2em;
+}
+
+
+
+@media only screen and (max-width:950px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav .menu-icon {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+
+    nav ul {
+       
+        display: none;
+    }
+
+    .showmenu{
+        display:block
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li.get-started-btn{
+       width: fit-content;
+       padding: 0.4em 1.2em
+    }
+
+    .hero-text h1{
+        font-size: 2.2em;
+    }
+
+    .aboutus-container{
+        flex-direction: column;
+        
+    }
+
+    .aboutus-image , .aboutus-description{
+        width: 100%;
+        justify-content: center;
+       
+    }
+
+    .aboutus-description{
+        padding: 0 5%;
+    }
+
+    .aboutus-image{
+        margin-bottom: 2em;
+    }
+
+    
+
+
+    
+}
+
+@media screen and (max-width:768px){
+    
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 60%;
+        margin-bottom: 2em;
+    }
+
+    .contactus-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-info {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .sendmsg-box{
+        width: 80%;
+    }
+
+    .emailandcallus-containet{
+        justify-content: center;
+    }
+
+    .location{
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .footer-email-box{
+        width: 80%;
+    }
+   
+}
+
+@media  screen and (max-width:576px) {
+    header{
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .heroContainer{
+        flex-direction: column-reverse;
+    }
+
+    .hero-text,.hero-image{
+        width: 100%;
+    }
+
+    .hero-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .hero-image img{
+        width: 60%;
+        height: 80%;
+    }
+
+    .clients-container{
+        flex-wrap: wrap;
+       
+    }
+
+    .clients-container div{
+        flex-basis: 50%;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    }
+
+    .aboutus-points{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aboutus-points>div{
+        width: 100%;
+    }
+
+    .services{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services >div{
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .features{
+        flex-direction: column !important;
+    }
+
+    .feature-img,.feature-desc{
+        width: 100%;
+    }
+
+    .feature-desc{
+        padding: 4% 4%;
+    }
+
+    .feature-img{
+        justify-content: center !important;
+    }
+
+    .feature-img img{
+        width: 60%;
+        height: 40%;
+    }
+
+    
+   
+}
