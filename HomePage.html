@@ -2,24 +2,25 @@
 
 <html>
     <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>Home Page</title>
         <link rel="stylesheet" href="HomePageStyle.css">
     </head>
 
 
     <body>
-
-        <header>
+<!-----------------------navbar and hero section------------------------->
+        <header id="home">
             <nav>
                 <div class="logo">
                     <h1>CSS CHALLENG</h1>
                 </div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
                     <li class="get-started-btn"><a href="" >Get Started</a></li>
                 </ul>
 
@@ -40,7 +41,8 @@
     
         </header> 
 
-       
+ <!---------------------------clients section-----------------------------------------> 
+
         <section class="clients-container">
             <div>
                 <img alt="client-1" src="./images/clients/client-1.png">
@@ -66,9 +68,9 @@
                 <img alt="client-6" src="./images/clients/client-6.png">
             </div> 
         </section>
+<!----------------------------about us section---------------------------------------------->
 
-
-        <section class="aboutus-container">
+        <section class="aboutus-container" id="aboutus">
             <div class="aboutus-image">
                 <img alt="about us" src="./images/about.jpg">
             </div>
@@ -121,7 +123,9 @@
             </div>
         </section>
 
-        <section class="services-container">
+    <!------------------------------services section------------------------------------------->    
+
+        <section class="services-container" id="services">
             <h2>Services</h2>
             <p>
                 In writing, the words point and purpose are almost synonymous. Your point is your purpose, and how you decide to make your point clear to your reader is also your purpose. Writers have a point and a purpose for every paragraph that they create.
@@ -170,7 +174,9 @@
             </div>
         </section>
 
-        <section class="features-container">
+     <!-----------------------------features section-------------------------------------------->   
+
+        <section class="features-container" id="features">
             <h2>Features</h2>
             <p>
                 In writing, the words point and purpose are almost synonymous. Your point is your purpose, and how you decide to make your point clear to your reader is also your purpose. Writers have a point and a purpose for every paragraph that they create.
@@ -259,7 +265,9 @@
             </div>
         </section>
 
-        <section class="pricing-container">
+      <!-----------------------pricing section--------------------------------------->  
+
+        <section class="pricing-container" id="pricing">
             <h2>Pricing</h2>
             <p>
                 In writing, the words point and purpose are almost synonymous. Your point is your purpose, and how you decide to make your point clear to your reader is also your purpose. Writers have a point and a purpose for every paragraph that they create.
@@ -346,7 +354,9 @@
             </div>
         </section>
 
-        <section class="contactus-container">
+    <!---------------------contact us section----------------------------------->    
+
+        <section class="contactus-container" id="contactus">
             <h2>contact</h2>
             <p>
                 In writing, the words point and purpose are almost synonymous. Your point is your purpose, and how you decide to make your point clear to your reader is also your purpose. Writers have a point and a purpose for every paragraph that they create.
@@ -384,7 +394,7 @@
             </div>
         </section>
 
-
+  <!--------------------------footer section------------------------------>
         <footer>
             <h2 class="footer-txt">CSS Challenge</h2>
             <p>make your point clear to your reader is also your purpose. Writers have a point and a purpose for every paragraph that they create.</p>

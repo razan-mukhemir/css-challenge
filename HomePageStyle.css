@@ -20,7 +20,10 @@ body{
     margin: 0;
     padding: 0;
 }
+
+
 /****************************************/
+
 header{
     width: 100vw;
     height: 100vh;
@@ -81,8 +84,14 @@ nav ul li.get-started-btn{
 
 .heroContainer{
     display: flex;
+    
+    
    
     
+}
+
+.hero-image , .hero-text{
+    width: 50%;
 }
 
 .hero-text{
@@ -90,28 +99,27 @@ nav ul li.get-started-btn{
    flex-direction: column;
    align-items: flex-start;
    justify-content: center;
-    width: 50%;
-    padding-left: 8rem;
+    padding-left: 6rem;
    
     
    
 }
 
-.hero-text h1 , .hero-text p{
+.hero-text h1{
     color: var(--primery-lightBlue);
     
 }
 
 .hero-text h1{
-    font-size: clamp(1em,10vw,3em);
-    margin-bottom: 0em;
+    font-size:3em;
+    
     
 }
 
 .hero-text p{
     font-size: 1.5em;
     color: white;
-    margin-top: 0;
+   
 }
 
 .heroContainer button{
@@ -125,10 +133,7 @@ nav ul li.get-started-btn{
 
 }
 
-.hero-image{
-   
-    width: 50%;
-}
+
 
 .hero-image img{
     width: 75%;
@@ -146,7 +151,7 @@ nav ul li.get-started-btn{
 }
 
 .clients-container img{
-    width: 90px;
+    width: 70px;
     height: 40px;
    
 }
@@ -157,13 +162,16 @@ nav ul li.get-started-btn{
     display: flex;
     background-image: linear-gradient(#f7f9fb,white,white);
     padding: 4% 0;
-    margin-right: 4em;
     color: var(--primery-navy);
     width: 100%;
+    gap: 2em;
+}
+
+.aboutus-image , .aboutus-description{
+    width: 50%;
 }
 
 .aboutus-image{
-    width: 50%;
     display: flex;
     justify-content: flex-end;
 }
@@ -175,10 +183,9 @@ nav ul li.get-started-btn{
 }
 
 .aboutus-description{
-    width: 50%;
-    padding-left: 4%;
+   
     padding-top: 2%;
-    padding-right: 4%;
+    
 }
 
 .aboutus-description >h2{
@@ -223,7 +230,6 @@ nav ul li.get-started-btn{
 .services-container , .features-container,.pricing-container , .contactus-container{
     color: var(--primery-navy);
     background-image: linear-gradient(#f7f9fb,white,white);
-    
     padding: 4% 0;
 }
 
@@ -243,22 +249,26 @@ nav ul li.get-started-btn{
     margin-bottom: 2em;
 }
 
+
+
 .services{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2em;
 }
 
 .services >div{
     width: 35%;
     height: 300px;
     margin-bottom: 12em;
-    margin-right: 2em;
+    background-size: cover;
+    
     
 
 }
 
-.services > div:nth-child(1){
+.services > div:first-child{
     background-image: url('./images/services-1.jpg');
 }
 .services > div:nth-child(2){
@@ -267,7 +277,7 @@ nav ul li.get-started-btn{
 .services > div:nth-child(3){
     background-image: url('./images/services-3.jpg');
 }
-.services > div:nth-child(4){
+.services > div:last-child{
     background-image: url('./images/services-4.jpg');
 }
 
@@ -372,8 +382,8 @@ nav ul li.get-started-btn{
 
 .card:nth-child(2){
     margin-top: 2rem;
-  margin-bottom: -2rem;
-z-index: 5;
+    margin-bottom: -2rem;
+    z-index: 5;
     border: 1px solid var(--primery-yellow);
 }
 
@@ -426,6 +436,7 @@ z-index: 5;
 
 .contactus-row{
     display: flex;
+    
 }
 
 .our-info{
@@ -440,6 +451,7 @@ z-index: 5;
 .emailandcallus-containet{
     display: flex;
     justify-content: flex-end;
+    gap: 4%;
 }
 
 .our-info i{
@@ -459,15 +471,15 @@ z-index: 5;
 }
 
 .location{
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-bottom: 2em;
     
 }
 
 .email,.callus{
-    width: 33%;
-    margin-left: 4%;
+    width: 38%;
+    
    
 }
 
@@ -564,6 +576,9 @@ footer{
 
 .soialmedia-box{
     margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 
@@ -573,8 +588,10 @@ footer{
     border-radius: 20em;
     background-color: var(--primery-lightGrey);
     padding: 0.55em 0.6em;
-    margin-left: 2em;
+    
 }
+
+
 
 
 
@@ -587,8 +604,8 @@ footer{
     nav .menu-icon {
         display: block;
         position: absolute;
-        top: 18px;
-        right: 32px;
+        top: 7px;
+        right: 35px;
     }
 
     nav ul {
@@ -639,7 +656,9 @@ footer{
     
 }
 
-@media screen and (max-width:768px){
+@media only screen and (max-width:768px){
+
+    
     
     .pricing-cards{
         flex-direction: column;
@@ -658,10 +677,12 @@ footer{
     .our-info {
         width: 100%;
         margin-bottom: 2em;
+        
     }
 
     .sendmsg-box{
         width: 80%;
+        margin: auto;
     }
 
     .emailandcallus-containet{
@@ -678,30 +699,44 @@ footer{
    
 }
 
-@media  screen and (max-width:576px) {
+@media only screen and (max-width:576px) {
     header{
         height: auto;
         padding-bottom: 5%;
+       
+    }
+
+    .logo h1{
+        font-size: 1.4em;
     }
     .heroContainer{
+        
         flex-direction: column-reverse;
     }
 
     .hero-text,.hero-image{
+       
         width: 100%;
+        
+    }
+
+    .hero-text{
+        padding: 2em;
+        
     }
 
     .hero-image{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2em;
+        margin-top: 1em;
     }
 
     .hero-image img{
         width: 60%;
         height: 80%;
     }
+    
 
     .clients-container{
         flex-wrap: wrap;
@@ -752,6 +787,24 @@ footer{
     .feature-img img{
         width: 60%;
         height: 40%;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .emailandcallus-containet{
+        flex-direction: column;
+    }
+
+    .email,.callus{
+        width: 80%;
+        margin: auto;
+       
+    }
+
+    .email{
+        margin-bottom: 2em;
     }
 
     
