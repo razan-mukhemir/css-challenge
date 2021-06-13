@@ -1,0 +1,7 @@
+Font:Poppins
+
+Colors: 
+yellow: #fdc134
+navy: #213b52
+grey: #444444
+lightGrey: #999999

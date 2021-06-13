@@ -25,11 +25,10 @@ body{
 /****************************************/
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--primery-navy);
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 .logo h1 {
     font-size: 1.6rem;
@@ -43,10 +42,9 @@ header{
 }
 
 nav {
-    padding: 2% 8%;
+    padding: 4% 4%;
     display: flex;
     justify-content: space-between;
-  
 }
 
 nav .menu-icon {
@@ -57,13 +55,11 @@ nav .menu-icon {
 
 nav ul {
     list-style-type: none;
-    
 }
 
 nav ul li {
     display: inline-block;
     margin-left: 2rem;
-    
 }
 
 nav ul li a{
@@ -77,17 +73,12 @@ nav ul li a:hover{
 
 nav ul li.get-started-btn{
     border: 1px solid var(--primery-yellow);
-   padding: 0.4em 1.2em;
-    border-radius: 4em;
-    
+    padding: 0.4em 1.2em;
+    border-radius: 4em; 
 }
 
 .heroContainer{
     display: flex;
-    
-    
-   
-    
 }
 
 .hero-image , .hero-text{
@@ -99,27 +90,20 @@ nav ul li.get-started-btn{
    flex-direction: column;
    align-items: flex-start;
    justify-content: center;
-    padding-left: 6rem;
-   
-    
-   
+   padding-left: 6rem;
 }
 
 .hero-text h1{
     color: var(--primery-lightBlue);
-    
 }
 
 .hero-text h1{
     font-size:3em;
-    
-    
 }
 
 .hero-text p{
     font-size: 1.5em;
     color: white;
-   
 }
 
 .heroContainer button{
@@ -129,11 +113,7 @@ nav ul li.get-started-btn{
     border: none;
     color: var(--primery-gray);
     margin-top: 3em;
-
-
 }
-
-
 
 .hero-image img{
     width: 75%;
@@ -143,7 +123,7 @@ nav ul li.get-started-btn{
 /*********************clients container*********************/
 
 .clients-container{
-    padding: 4% 0 ;
+    padding: 3em 0 ;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -153,7 +133,6 @@ nav ul li.get-started-btn{
 .clients-container img{
     width: 70px;
     height: 40px;
-   
 }
 
 /********************about us container ***************/
@@ -161,35 +140,33 @@ nav ul li.get-started-btn{
 .aboutus-container{
     display: flex;
     background-image: linear-gradient(#f7f9fb,white,white);
-    padding: 4% 0;
+    padding: 3em 0;
     color: var(--primery-navy);
     width: 100%;
-    gap: 2em;
-}
-
-.aboutus-image , .aboutus-description{
-    width: 50%;
-}
-
-.aboutus-image{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.aboutus-image img{
-    width: 60%;
-    height: 100%;
-   
 }
 
 .aboutus-description{
-   
-    padding-top: 2%;
-    
+    width: 55%;
+    padding-left: 4em;
+}
+
+.aboutus-image{
+    width: 45%;
+    display: flex;
+    padding-left: 12em;
+}
+
+.aboutus-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus-description{
+    padding-top: 2em;
+    margin-right: 12em;
 }
 
 .aboutus-description >h2{
-    
     font-size: 2.4em;
 }
 
@@ -208,7 +185,6 @@ nav ul li.get-started-btn{
     display: flex;
     width: 50%;
     margin-bottom: 2em;
-
 }
 
 .aboutus-points >div h3{
@@ -230,7 +206,7 @@ nav ul li.get-started-btn{
 .services-container , .features-container,.pricing-container , .contactus-container{
     color: var(--primery-navy);
     background-image: linear-gradient(#f7f9fb,white,white);
-    padding: 4% 0;
+    padding: 3em 0;
 }
 
 .services-container h2 ,.features-container h2 ,.pricing-container h2 , .contactus-container h2{
@@ -244,12 +220,12 @@ nav ul li.get-started-btn{
 
 .services-container >p , .features-container >p , .pricing-container >p , .contactus-container >p{
     color: var(--primery-gray);
+    width: 75%;
     text-align: center;
-    padding: 0 10%;
+    padding: 0 2em;
+    margin: auto;
     margin-bottom: 2em;
 }
-
-
 
 .services{
     display: flex;
@@ -263,9 +239,6 @@ nav ul li.get-started-btn{
     height: 300px;
     margin-bottom: 12em;
     background-size: cover;
-    
-    
-
 }
 
 .services > div:first-child{
@@ -315,31 +288,38 @@ nav ul li.get-started-btn{
 .features{
     display: flex;
     margin-bottom: 2em;
+    padding-left: 2em;
 }
 
 .feature-img{
     width: 40%;
     display: flex;
-    justify-content: flex-end;
 }
 
 .feature-img img{
     width: 80%;
     height: 80%;
-    
 }
 
 .features:nth-child(even){
    flex-direction: row-reverse;
 }
 
+.features:nth-child(even) .feature-img{
+    justify-content: flex-start;
+}
+
+.features:nth-child(odd) .feature-img{
+    justify-content: flex-end; 
+}
+
 .feature-desc{
-    width: 60%;
+    width: 50%;
     margin-top: 4em;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+}
+
+.features:nth-child(odd) .feature-desc{
+    padding-left: 4em;
 }
 
 .feature-desc h3{
@@ -362,9 +342,7 @@ nav ul li.get-started-btn{
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    padding: 0 1%;
-    
-    
+    padding: 0 1em;
 }
 
 .card{
@@ -373,11 +351,10 @@ nav ul li.get-started-btn{
     text-align: center;
     color: var(--primery-gray);
     box-shadow: 5px 5px 10px var(--primery-lightGrey);
-    padding: 5% 0;
+    padding: 3.5em 0;
     margin-top: 4em;
     flex-grow: 1;
     flex-basis: 0;
-    
 }
 
 .card:nth-child(2){
@@ -390,9 +367,10 @@ nav ul li.get-started-btn{
 .card h3{
     margin-bottom: 1em;
     font-size: 1.6em;
+    color: var(--primery-gray);
 }
 
-.card p{
+.pricing-des p , .per-month-txt{
     margin-bottom: 0.5em;
     color: var(--primery-lightGrey);
 }
@@ -403,7 +381,6 @@ nav ul li.get-started-btn{
     padding: 0.5em 1em;
     border-radius: 4em;
     margin-bottom: 4em;
-    
 }
 
 .card:nth-child(2) a{
@@ -415,7 +392,6 @@ nav ul li.get-started-btn{
 }
 
 .pricing-des >p{
-    
     margin-bottom: 0.4em;
 }
 
@@ -425,7 +401,7 @@ nav ul li.get-started-btn{
 
 .price{
     font-size: 2.1em;
-    color: var(--primery-yellow) !important;
+    color: var(--primery-yellow);
     font-weight: bolder;
 }
 
@@ -435,23 +411,19 @@ nav ul li.get-started-btn{
 }
 
 .contactus-row{
-    display: flex;
-    
+    display: flex;    
 }
 
 .our-info{
     width: 50%;
     text-align: center;
     color: var(--primery-gray);
-   
-   
-    
 }
 
 .emailandcallus-containet{
     display: flex;
     justify-content: flex-end;
-    gap: 4%;
+    gap: 2em;
 }
 
 .our-info i{
@@ -467,20 +439,16 @@ nav ul li.get-started-btn{
     background-color: white;
     padding: 5% 0;
     box-shadow: 5px 5px 15px var(--primery-lightGrey);
-    
 }
 
 .location{
     width: 80%;
     margin-left: auto;
     margin-bottom: 2em;
-    
 }
 
 .email,.callus{
     width: 38%;
-    
-   
 }
 
 .location-txt , .email-txt , .callus-txt{
@@ -492,7 +460,7 @@ nav ul li.get-started-btn{
 .sendmsg-box{
     width: 40%;
     margin-left: 2em;
-    padding: 2% 5%;
+    padding: 1em 3em;
 }
 
 .sendmsg-box input{
@@ -503,19 +471,19 @@ nav ul li.get-started-btn{
 
 #nameInput ,#emailInput{
  width: 40%;
- padding: 2% 5%;
- margin-right: 5%;
+ padding: 1em 3em;
+ margin-right: 3em;
  
 }
 
 #subjectInput{
     width: 88%;
-    padding: 2% 5%;
+    padding: 1em 3em;
 }
 
 #massegeInput{
     width: 88%;
-    padding: 2% 5%;
+    padding: 1em 3em;
     height: 150px;
 }
 
@@ -563,7 +531,6 @@ footer{
     width: 80%;
     height: 100%;
     border: none;
-
 }
 
 .footer-email-box button{
@@ -581,18 +548,20 @@ footer{
     gap: 1em;
 }
 
+.soialmedia-box a{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primery-lightGrey);
+}
 
 .soialmedia-box a i{
     color: white;
-    font-size: 1em;
-    border-radius: 20em;
-    background-color: var(--primery-lightGrey);
-    padding: 0.55em 0.6em;
-    
+    font-size: 1em; 
 }
-
-
-
 
 
 @media only screen and (max-width:950px) {
@@ -608,8 +577,7 @@ footer{
         right: 35px;
     }
 
-    nav ul {
-       
+    nav ul {       
         display: none;
     }
 
@@ -639,27 +607,16 @@ footer{
     .aboutus-image , .aboutus-description{
         width: 100%;
         justify-content: center;
-       
-    }
-
-    .aboutus-description{
-        padding: 0 5%;
+        padding: 0 1em;
     }
 
     .aboutus-image{
         margin-bottom: 2em;
-    }
-
-    
-
-
-    
+    }  
 }
 
 @media only screen and (max-width:768px){
 
-    
-    
     .pricing-cards{
         flex-direction: column;
         align-items: center;
@@ -668,6 +625,7 @@ footer{
     .card{
         width: 60%;
         margin-bottom: 2em;
+        padding-bottom: 2em;
     }
 
     .contactus-row{
@@ -677,7 +635,6 @@ footer{
     .our-info {
         width: 100%;
         margin-bottom: 2em;
-        
     }
 
     .sendmsg-box{
@@ -692,6 +649,11 @@ footer{
     .location{
         margin: auto;
         margin-bottom: 2em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #nameInput , #emailInput ,#subjectInput , #massegeInput{
+        width: 100%;
     }
     .footer-email-box{
         width: 80%;
@@ -703,26 +665,21 @@ footer{
     header{
         height: auto;
         padding-bottom: 5%;
-       
     }
 
     .logo h1{
         font-size: 1.4em;
     }
     .heroContainer{
-        
         flex-direction: column-reverse;
     }
 
     .hero-text,.hero-image{
-       
         width: 100%;
-        
     }
 
     .hero-text{
         padding: 2em;
-        
     }
 
     .hero-image{
@@ -737,17 +694,15 @@ footer{
         height: 80%;
     }
     
-
     .clients-container{
-        flex-wrap: wrap;
-       
+        flex-wrap: wrap;   
     }
 
     .clients-container div{
         flex-basis: 50%;
-    margin-bottom: 2em;
-    display: flex;
-    justify-content: center;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
     }
 
     .aboutus-points{
@@ -769,19 +724,30 @@ footer{
     }
 
     .features{
-        flex-direction: column !important;
+        flex-direction: column ;
+    }
+    .features:nth-child(even){
+        flex-direction: column;
+     }
+
+    .features:nth-child(even) .feature-img{
+        justify-content: center;
+    }
+    
+    .features:nth-child(odd) .feature-img{
+        justify-content: center; 
+    }
+        
+    .features:nth-child(odd) .feature-desc{
+        padding-left: 0;
     }
 
     .feature-img,.feature-desc{
-        width: 100%;
+        width: 100%;   
     }
 
     .feature-desc{
-        padding: 4% 4%;
-    }
-
-    .feature-img{
-        justify-content: center !important;
+        padding: 2em 2em;
     }
 
     .feature-img img{
@@ -791,6 +757,8 @@ footer{
 
     .card{
         width: 80%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 
     .emailandcallus-containet{
@@ -802,11 +770,7 @@ footer{
         margin: auto;
        
     }
-
     .email{
         margin-bottom: 2em;
-    }
-
-    
-   
+    }  
 }
